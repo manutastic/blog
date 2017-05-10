@@ -179,13 +179,13 @@ pre {
       margin-right: 20px; }
   @media screen and (max-width: 600px) {
     .site-nav {
-      position: absolute;
+      /*position: absolute;
       top: 9px;
-      right: 15px;
-      background-color: #050b1e;
-      border: 1px solid #b6bbcb;
+      right: $spacing-unit / 2;
+      background-color: $background-color;
+      border: 1px solid $grey-color-light;
       border-radius: 5px;
-      text-align: right; }
+      text-align: right;*/ }
       .site-nav .menu-icon {
         display: block;
         float: right;
