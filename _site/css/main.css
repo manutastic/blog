@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Karla");
 /**
  * Reset some basic elements
  */
@@ -11,9 +12,9 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
-  background-color: #fdfdfd;
+  font: 400 16px/1.5 "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #939dba;
+  background-color: #050b1e;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -66,20 +67,17 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: royalblue;
   text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
   a:hover {
-    color: #111;
     text-decoration: underline; }
 
 /**
  * Blockquotes
  */
 blockquote {
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
+  color: #4c5369;
+  border-left: 4px solid #b6bbcb;
   padding-left: 15px;
   font-size: 18px;
   letter-spacing: -1px;
@@ -93,7 +91,7 @@ blockquote {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #b6bbcb;
   border-radius: 3px;
   background-color: #eef; }
 
@@ -112,16 +110,16 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
+  max-width: -webkit-calc(500px - (30px * 2));
+  max-width: calc(500px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
+      max-width: -webkit-calc(500px - (30px));
+      max-width: calc(500px - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -142,14 +140,14 @@ pre {
   height: 16px;
   vertical-align: middle; }
   .icon > svg path {
-    fill: #828282; }
+    fill: #4c5369; }
 
 /**
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
+  border-top: 5px solid #030611;
+  border-bottom: 1px solid #030611;
   min-height: 56px;
   position: relative; }
 
@@ -161,15 +159,21 @@ pre {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: #fdfdfd; }
 
 .site-nav {
   float: right;
   line-height: 56px; }
   .site-nav .menu-icon {
     display: none; }
+  .site-nav .social-icons li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px; }
+    .site-nav .social-icons li a {
+      color: #4c5369; }
   .site-nav .page-link {
-    color: #111;
+    color: #939dba;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -178,8 +182,8 @@ pre {
       position: absolute;
       top: 9px;
       right: 15px;
-      background-color: #fdfdfd;
-      border: 1px solid #e8e8e8;
+      background-color: #050b1e;
+      border: 1px solid #b6bbcb;
       border-radius: 5px;
       text-align: right; }
       .site-nav .menu-icon {
@@ -194,7 +198,7 @@ pre {
           width: 18px;
           height: 15px; }
           .site-nav .menu-icon > svg path {
-            fill: #424242; }
+            fill: #030611; }
       .site-nav .trigger {
         clear: both;
         display: none; }
@@ -212,7 +216,7 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid #030611;
   padding: 30px 0; }
 
 .footer-heading {
@@ -223,10 +227,16 @@ pre {
 .social-media-list {
   list-style: none;
   margin-left: 0; }
+  .contact-list li,
+  .social-media-list li {
+    display: inline-block; }
+    .contact-list li a,
+    .social-media-list li a {
+      color: #4c5369; }
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #828282;
+  color: #4c5369;
   margin-left: -15px; }
 
 .footer-col {
@@ -246,7 +256,7 @@ pre {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (30px / 2));
@@ -273,15 +283,22 @@ pre {
   margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px; }
+    margin-bottom: 100px; }
 
 .post-meta {
   font-size: 14px;
-  color: #828282; }
+  color: #4c5369; }
 
 .post-link {
   display: block;
-  font-size: 24px; }
+  font-size: 35pt;
+  line-height: initial;
+  font-weight: bold;
+  color: #fdfdfd; }
+
+.continue-link {
+  color: #fdfdfd;
+  font-weight: bold; }
 
 /**
  * Posts
@@ -290,28 +307,26 @@ pre {
   margin-bottom: 30px; }
 
 .post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1; }
-  @media screen and (max-width: 800px) {
-    .post-title {
-      font-size: 36px; } }
+  font-size: 35pt;
+  line-height: initial;
+  font-weight: bold;
+  color: #fdfdfd; }
 
 .post-content {
   margin-bottom: 30px; }
   .post-content h2 {
     font-size: 32px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 500px) {
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
     font-size: 26px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 500px) {
       .post-content h3 {
         font-size: 22px; } }
   .post-content h4 {
     font-size: 20px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 500px) {
       .post-content h4 {
         font-size: 18px; } }
 

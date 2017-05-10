@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Manutastic</title>
-  <meta name="description" content="Manu is a developer with a strong eye for design. He writes silly things here sometimes.
-">
+  <title>Automatically test your database backups.</title>
+  <meta name="description" content="One of the issues of yesterday’s GitLab.com “database incident” is that most of their database backups weren’t being tested, and when they needed a restore, ...">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://manutastic.com/blog/">
+  <link rel="canonical" href="http://manutastic.com/blog/jekyll/2017/05/09/automatically-test-your-database-backups.html">
   <link rel="alternate" type="application/rss+xml" title="Manutastic" href="http://manutastic.com/blog/feed.xml">
   <script src="https://use.fontawesome.com/58cc41cab2.js"></script>
 </head>
@@ -60,48 +59,23 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">May 9, 2017</span>
+  <header class="post-header">
+    <p class="post-meta"><time datetime="2017-05-09T23:45:33-04:00" itemprop="datePublished">May 9, 2017</time></p>
+    <h1 class="post-title" itemprop="name headline">Automatically test your database backups.</h1>
+  </header>
 
-        <h2>
-          <a class="post-link" href="/blog/jekyll/2017/05/09/automatically-test-your-database-backups.html">Automatically test your database backups.</a>
-        </h2>
-        <p>
-          <p>One of the issues of yesterday’s GitLab.com “database incident” is that most of their database backups weren’t being tested, and when they needed a restore, they discovered that most of the backup methods hadn’t been working.</p>
+  <div class="post-content" itemprop="articleBody">
+    <p>One of the issues of yesterday’s GitLab.com “database incident” is that most of their database backups weren’t being tested, and when they needed a restore, they discovered that most of the backup methods hadn’t been working.</p>
 
+<p>Untested backup methods that turn out to be missing or broken are extremely common. I can’t fault them much because it’s a very easy mistake to make: most backups, by nature, never need to be restored from, so you never realize if something changes and they stop working… until it’s too late.</p>
 
-        </p>
-        <a class="continue-link" href="/blog/jekyll/2017/05/09/automatically-test-your-database-backups.html">Continue reading ></a>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 31, 2017</span>
+<p>The solution is to frequently and automatically test backups by:</p>
 
-        <h2>
-          <a class="post-link" href="/blog/test/2017/01/31/the-future-of-computing.html">The future of computing.</a>
-        </h2>
-        <p>
-          <p>The quarterly results are in and Apple’s doing fine overall, but the iPad really isn’t, with another year-over-year decrease in sales.</p>
+  </div>
 
-<p>Apple and commentators can keep saying the iPad is “the future of computing,” and it might still be. But we’re starting its seventh year in a few months, and sales peaked three years ago.</p>
-
-<p>What if the iPad isn’t the future of computing?</p>
-
-<p>What if, like so much in technology, it’s mostly just additive, rather than largely replacing PCs and Macs, and furthermore had a cooling-fad effect as initial enthusiasm wore off and customers came to this conclusion?</p>
-
-<p>The moving-average unit sales graph would look something like this, right?</p>
-
-        </p>
-        <a class="continue-link" href="/blog/test/2017/01/31/the-future-of-computing.html">Continue reading ></a>
-      </li>
-    
-  </ul>
-
-</div>
+</article>
 
       </div>
     </div>

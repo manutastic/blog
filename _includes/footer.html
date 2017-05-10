@@ -6,25 +6,14 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+        <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
       </div>
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
+           <li><a href="http://twitter.com/manutastic"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="http://github.com/manutastic"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li><a href="http://instagram.com/manuoppel"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         </ul>
       </div>
 
