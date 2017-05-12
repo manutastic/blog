@@ -199,3 +199,12 @@ pre {
         }
     }
 }
+
+/**
+* Selection Color
+*/
+
+*::selection {
+    background-color: $brand-color;
+    color: white;
+}
